@@ -1,0 +1,161 @@
+*{
+    font-family:  cursive;
+}
+
+body{
+background-image: url(imgs/Background_Night.svg);
+background-size: cover;
+background-position: center;
+position: relative;
+overflow: hidden;
+
+}
+
+
+.score-life{
+
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+
+}
+
+#basket{
+
+    position: absolute;
+    bottom: 50px;
+    width: 100px;
+    z-index: 4;
+}
+#basket img {width: 100%;}
+#basket h2 {
+    position: absolute;
+    z-index: 6;
+    left: 39%;
+    top: 4px;
+    color: yellow;
+}
+.chicken-div{
+  
+    width: 15%;
+   text-align: center;
+   position: relative;
+    
+}
+
+#chicken{
+    width: 100%;
+    
+}
+
+#egg1{
+    position: absolute;
+
+    top: 145px;
+    left: 73px;
+    z-index: -1;
+}
+
+
+
+.chicken-div2{
+  
+    width: 15%;
+   text-align: center;
+   position: relative;
+    
+}
+
+#chicken2{
+    width: 100%;
+    
+}
+
+#egg2{
+    position: absolute;
+
+    top: 145px;
+    left: 73px;
+    z-index: -1;
+}
+
+
+
+
+.chicken-div3{
+  
+    width: 15%;
+   text-align: center;
+   position: relative;
+    
+}
+
+#chicken3{
+    width: 100%;
+    
+}
+
+#egg3{
+    position: absolute;
+
+    top: 145px;
+    left: 73px;
+    z-index: -1;
+}
+
+.eggbrok{
+    width: 10%;
+  
+   display: none;
+   position: absolute;
+   bottom: 10px;
+   left: 150px;
+}
+
+.eggbrok2{
+    width: 10%;
+    display: none;
+  
+   position: absolute;
+   bottom: 10px;
+   
+}
+
+.eggbrok3{
+    width: 10%;
+    display: none;
+   
+   position: absolute;
+   bottom: 10px;
+   right:  170px;
+}
+
+.brokeegg1{
+
+    width: 100%;
+}
+
+.startDiv {
+border: solid 6px #ff4571 ;
+border-radius: 15px;
+width: 500px;
+height: 150px;
+background-color:#4c4660;
+position: absolute;
+top: 45%;
+left:30%;
+
+}
+
+.startDiv  h1 {
+    font-size: 65px;
+    color: rgb(235, 255, 255);
+    font-weight: 800;
+}
+
+.startDiv  button{
+
+    font-size: 25px;
+    font-weight: 500;
+}
