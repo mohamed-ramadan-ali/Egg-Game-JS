@@ -1,3 +1,6 @@
+
+
+
   // all eggs top position  
   var pos1 = 145;
   var pos2 = 145;
@@ -151,7 +154,45 @@ function startGame(){
 
 // Function myGame
 var myGame = setInterval( function  (){
-  
+
+
+  var speed=1
+
+if(score>=15 && score<30)
+{
+  speed=1.5
+}
+else if (score>=30 && score<45)
+{
+speed=2
+
+}
+
+else if (score>=45 && score<60)
+{
+speed=2.5
+
+}
+
+else if (score>=60 && score<75)
+{
+speed=3
+
+}
+
+else if (score>=75 && score<100)
+{
+speed=3.5
+
+}
+else if (score>=100 )
+{
+speed=4
+
+}
+
+
+
   // egg1 dimantions 
 var egg1Top= Math.round(egg1.getBoundingClientRect().top);
 var egg1Left= Math.round(egg1.getBoundingClientRect().left);
@@ -218,36 +259,36 @@ if ((egg3Y>basketTop && egg3Top<basketY && egg3X>=basketLeft && egg3X<basketX ||
 
 
 // check egg1 in the floor
-  if (pos1 == 560 ) {
+  if (pos1 >= 560 ) {
     pos1 = 145
     showBrokenEgg1()
     minusLife()
   } else {
-    pos1++;
+    pos1+=speed;
 
     egg1.style.top = pos1 + "px";
   }
 
 
 // check egg2 in the floor
-  if (pos2 == 560 ) {
+  if (pos2 >= 560 ) {
     pos2 = 145
     showBrokenEgg2()
     minusLife()
   } else {
-    pos2++;
+    pos2+=speed;
 
     egg2.style.top = pos2 + "px";
   }
 
 
 // check egg3 in the floor
-  if (pos3 == 560 ) {
+  if (pos3 >= 560 ) {
     pos3 = 145
     showBrokenEgg3()
     minusLife()
   } else {
-   pos3++;
+    pos3+=speed;
 
     egg3.style.top = pos3 + "px";
   }
@@ -269,15 +310,12 @@ if ((egg3Y>basketTop && egg3Top<basketY && egg3X>=basketLeft && egg3X<basketX ||
   }
 
 
+ 
 
-
-
-}, 3.5)
+}, 12)
 }
 
 
-
- 
 
 
 
