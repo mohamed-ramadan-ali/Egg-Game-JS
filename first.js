@@ -132,19 +132,19 @@ document.addEventListener("mousemove", function (e) {
 
 function showBrokenEgg1(){
   eggBroke1.style.display="block";
-  setTimeout(function(){eggBroke1.style.display="none"}, 500)
+  setTimeout(function(){eggBroke1.style.display="none"}, 300)
   
   }
   
   function showBrokenEgg2(){
     eggBroke2.style.display="block";
-    setTimeout(function(){eggBroke2.style.display="none"}, 500)
+    setTimeout(function(){eggBroke2.style.display="none"}, 300)
     
     }
   
     function showBrokenEgg3(){
       eggBroke3.style.display="block";
-      setTimeout(function(){eggBroke3.style.display="none"}, 500)
+      setTimeout(function(){eggBroke3.style.display="none"}, 300)
       
       }
 ////////////////////////////////////////////////////////////////////
@@ -155,7 +155,7 @@ function startGame(){
 // Function myGame
 var myGame = setInterval( function  (){
 
-
+// speed check and incrise  
   var speed=1
 
 if(score>=15 && score<30)
