@@ -89,7 +89,7 @@ function minusLife(){
 var coinAudio=document.getElementById("coinAudio");
 var backgroundSong=document.getElementById("backgroundSong")
 var gameOverTune=document.getElementById("gameOverTune")
-
+var muteIcone=document.getElementById("mute")
 function playCoin(){
  
   coinAudio.play();
@@ -109,7 +109,24 @@ backgroundSong.currentTime = 0;
 gameOverTune.play();
  }
 
+ function muteAndUnmute(){
+  backgroundSong.pause();
 
+ }
+
+ // mute & unmute function
+
+ muteIcone.addEventListener("click",function(){
+ 
+
+  if (backgroundSong.duration > 0 && !backgroundSong.paused) {
+  
+    muteAndUnmute()
+  
+  } else{
+    backgroundSong.play();
+  }
+ })
 
 
 
