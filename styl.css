@@ -159,3 +159,19 @@ left:30%;
     font-size: 25px;
     font-weight: 500;
 }
+
+
+#mute{
+    height: 50;
+    width: 50px;
+    
+    position: absolute;
+    top: 60px;
+    left: 5px;
+    z-index: 33;
+    cursor: pointer;
+}
+
+#mute img {
+    width: 100%;
+}
